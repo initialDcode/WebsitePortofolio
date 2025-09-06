@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 40px;
+  box-shadow: 0 0 2px white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.profil > img {
+  width: 400px;
+  display: flex;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.brand {
+  display: flex;
+  gap: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.data {
+  font-size: 25px;
+  max-width: 35ch;
+  margin: 20px;
+  color: rgb(194, 194, 194);
+  font-family: "Poppins";
+}
+
+.data p {
+  font-size: 25px;
+  text-shadow: 0 0 2px 5px white;
+}
+
+.icon ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon ul {
+  margin-top: 5px;
+  display: flex;
+  gap: 20px;
+  font-size: 35px;
+}
+
+.icon i {
+  color: black;
+  text-shadow: 0 0 20px #ffffff;
+}
+
+.typing {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #1e3a8a;
+  text-shadow: 0 0 10px #1e3a8a;
+  overflow: hidden;
+  border-right: 0.15em solid #1e3a8a;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 10s steps(12, end) infinite, blink 0.7s step-end infinite;
+}
+
+.typing span {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  10% {
+    width: 12ch;
+  }
+  60% {
+    width: 12ch;
+  }
+  80% {
+    width: 0ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
